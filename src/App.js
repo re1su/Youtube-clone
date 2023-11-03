@@ -1,9 +1,9 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Box } from "@mui/material";
 import { ChannelDetail, Feed, Navbar, SearchFeed, VideoDetail } from './components'
 
 const App = () => (
-  <BrowserRouter>
+  <Router>
     <Box sx={{ backgroundColor: '#000' }}>
       <Navbar />
       <Routes>
@@ -13,7 +13,7 @@ const App = () => (
         <Route path="/search/:id" element={<SearchFeed />} />
       </Routes>
     </Box>
-  </BrowserRouter>
+  </Router>
 )
 
 
